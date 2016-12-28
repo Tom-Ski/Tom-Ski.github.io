@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Setting up Environment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="/css/toast.css" rel="stylesheet" />
+<link href="/css/documentation.css" rel="stylesheet" />
+<link  href="/css/libgdx.css" rel="stylesheet" />
+<link href='//fonts.googleapis.com/css?family=Roboto:400,700,500,300' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/list.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div id="site">
+<div id="content">
+<div id="header">
+<div class="container" style="padding:0px;">
+	<a href="index.html"><img src="/img/logo.png" id="logo"/></a>
+	<ul class="menu">
+		<li><a href="/news.html" id="menu_news">News</a></li>
+		<li><a href="/features.html" id="menu_features">Features</a></li>
+		<li><a href="/download.html" id="menu_download">Download</a></li>
+		<li><a href="/source.html" id="menu_source">Source</a></li>
+		<li><a href="/documentation" id="menu_documentation">Documentation</a></li>
+		<li><a href="/gallery.html" id="menu_gallery">Gallery</a></li>
+		<li><a href="/community.html" id="menu_community">Community</a></li>
+	</ul>
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="highlights">
+</div>
+
+<div class="documentation-panel">
+
+<div class="toc" id="toc">
+
+<div class="searchbar">
+	<input class="search" placeholder="Search" />
+</div>
+
+<ul class="list">
+	<p class="category" data-always-visible="true">Getting Started</p>
+	<li><a class="title" href="/documentation/">Intro</a></li>
+	<li><a class="title" href="/documentation/gettingstarted/Setting Up.html">Setting Up</a></li>
+	<li><a class="title" href="/documentation/gettingstarted/Creating Projects.html">Creating Projects</a></li>
+	<li><a class="title" href="/documentation/gettingstarted/Importing.html">Importing into IDE</a></li>
+	<li><a class="title" href="/documentation/gettingstarted/Running.html">Running and Debugging</a></li>
+	<li><a class="title" href="/documentation/gettingstarted/Packaging.html">Packaging</a></li>
+
+	<p class="category" data-always-visible="true">Hacking</p>
+	<li><a class="title" href="/documentation/">Working from source</a></li>
+	<li><a class="title" href="/documentation/">Contributing</a></li>
+
+	<p class="category" data-always-visible="true">Getting help</p>
+	<li><a class="title" href="/documentation/">Documentation</a></li>
+	<li><a class="title" href="/documentation/">Issue reporting</a></li>
+	<li><a class="title" href="/documentation/">Community help</a></li>
+
+	<p class="category" data-always-visible="true">Tutorials</p>
+</ul>
+
+</div>
+
+<div class="documentation">
+<h1>Setting up Environment</h1>
+
+<p>This article provides you with the information required before you start importing a LibGDX project.</p>
+<p>LibGDX projects are built and managed with the Gradle build tool.
+This allows you to develop in almost any environment that takes your fancy, even if
+you are working in a team.</p>
+<p>The 3 major java IDEs, IDEA/Android Studio, Eclipse and Netbeans are all supported, just make sure you have
+set them up correctly.</p>
+<hr>
+<h2><a name="setting-up-your-development-environment" class="anchor" href="#setting-up-your-development-environment">Setting up your Development Environment</a></h2><ul>
+<li><strong>IDE Configuration</strong><ul>
+<li><a href="#setting-up-intellij-idea-android-studio">IDEA/Android Studio</a></li>
+<li><a href="#setting-up-eclipse">Eclipse</a></li>
+<li><a href="#setting-up-netbeans">Netbeans</a></li>
+<li><a href="#command-line">Command Line</a><br>
+<br></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a name="setting-up-intellij-idea-android-studio" class="anchor" href="#setting-up-intellij-idea-android-studio">Setting up Intellij IDEA/Android Studio</a></h2><p>Minimum:</p>
+<ul>
+<li>Java Development Kit 7+ (Must be JDK)</li>
+<li>Intellij IDEA 2016+, (community edition is sufficient) <a href="https://www.jetbrains.com/idea/download/#section=windows">Link</a></li>
+<li>Android Studio, 2.2+ <a href="https://developer.android.com/studio/index.html">Link</a></li>
+</ul>
+<p>Android:</p>
+<ul>
+<li>Android SDK (If using IDEA) <a href="https://developer.android.com/studio/index.html#downloads">Link</a></li>
+</ul>
+<p>iOS:</p>
+<ul>
+<li>RoboVM OSS Intellij plugin (if using RobovmOSS) <a href="http://robovm.mobidevelop.com/">Link</a></li>
+<li>Multi OS Engine Intellij plugin (if using Multi OS Engine) <a href="https://plugins.jetbrains.com/idea/plugin/8559-multi-os-engine-plugin">Link</a></li>
+</ul>
+<h2><a name="setting-up-eclipse" class="anchor" href="#setting-up-eclipse">Setting up Eclipse</a></h2><p>Minimum:</p>
+<ul>
+<li>Java Development Kit 7+ (Must be JDK)</li>
+<li>Eclipse Mars+ with Buildship <a href="https://www.eclipse.org/downloads/">link</a></li>
+</ul>
+<p>Android:</p>
+<ul>
+<li>Android SDK <a href="https://developer.android.com/studio/index.html#downloads">Link</a></li>
+<li>ADT Tools <a href="https://developer.android.com/studio/tools/sdk/eclipse-adt.html">Link</a></li>
+</ul>
+<p>iOS:</p>
+<ul>
+<li>RobovmOSS Eclipse plugin <a href="http://robovm.mobidevelop.com/">Link</a></li>
+<li>Multi OS Engine plugin <a href="https://multi-os-engine.org/start/">Link</a></li>
+</ul>
+<h2><a name="setting-up-netbeans" class="anchor" href="#setting-up-netbeans">Setting up Netbeans</a></h2><p>Haha good one...</p>
+<h2><a name="command-line" class="anchor" href="#command-line">Command Line</a></h2><p>Minimum:</p>
+<ul>
+<li>Java Development Kit 7+ (Must be JDK)</li>
+</ul>
+<p>Android:</p>
+<ul>
+<li>Android SDK</li>
+<li>Set the ANDROID_HOME environment variable, or use gradle.properties</li>
+</ul>
+
+</div>
+	
+</div>
+
+</div>
+<div id="footer">
+	<div class="container">
+		<div class="grid">
+			This page is copyright &copy; 2013 Mario Zechner; All other trademarks, logos and copyrights are the property of their respective owners. 
+		</div>
+		<div>
+		<span style="float:right">Design by <a href="http://www.xklibur.com/">XKlibur</a>, HTML/CSS by <a href="http://bitowl.de/">bitowl</a></span>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var options = {
+		valueNames: ['category', 'title']
+	};
+	var userList = new List('toc', options); 
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12707328-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
